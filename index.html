@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makhmud/Dev - IT Solutions</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Makhmud/Dev</h1>
+        <p>Ваш партнер в области цифровой трансформации</p>
+    </header>
+
+    <nav>
+        <a href="#services">Услуги</a>
+        <a href="#about-me">Обо мне</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <section id="services" class="services">
+        <h2>Мои Услуги</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>Веб-разработка</h3>
+                <p>Я фронтенд-веб-разработчик. Помогаю компаниям создавать современные и удобные веб-сайты, которые
+                    привлекают пользователей и решают бизнес-задачи.</p>
+            </div>
+            <div class="service">
+                <h3>Организация доменной структуры</h3>
+                <p>Автоматизация установки, обновления и управления ПО через домен для снижения нагрузки на IT-отдел.</p>
+            </div>
+            <div class="service">
+                <h3>Создание и настройка серверов</h3>
+                <p>Настройка и поддержание стабильной работы серверов для хранения файлов, почты и печати.</p>
+            </div>
+            <div class="service">
+                <h3>Сетевая инфраструктура</h3>
+                <p>Разрабатываю, внедряю и управляю безопасными и надёжными сетевыми решениями.</p>
+            </div>
+            <div class="service">
+                <h3>IT-поддержка</h3>
+                <p>Предлагаю комплексные услуги ИТ-поддержки для обеспечения бесперебойной работы ваших систем.</p>
+            </div>
+
+            <div class="service">
+                <h3>Установка и настройка камер</h3>
+                <p>Защитите свой дом или бизнес с помощью профессиональной установки и настройки камер видеонаблюдения
+                    "Hikvision".</p>
+            </div>
+            <div class="service">
+                <h3>Установка и настройка ОС и ПО</h3>
+                <p>Быстрая установка Windows (8.1, 10, 11) и популярных программ: AutoCAD, Photoshop, 1C, Office и
+                    защита от вирусов.</p>
+            </div>
+            <div class="service">
+                <h3>Обслуживание 1С</h3>
+                <p>Оперативное решение проблем, автоматизация резервного копирования и обновлений, консультации.
+                    Экономия времени на администрирование и поддержание работоспособности 1С.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about-me" class="about-me">
+        <!-- Изменила id и class, чтобы отразить личный характер -->
+        <h2>Обо мне</h2>
+        <p>Я - опытный ИТ-профессионал, стремящийся предоставлять инновационные и надежные решения. С энтузиазмом
+            отношусь к технологиям и стремлюсь к совершенству, чтобы помочь бизнесу процветать в цифровую эпоху.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Контакты</h2>
+        <p>Готовы вывести ваш бизнес на новый уровень? Свяжитесь со мной сегодня, чтобы обсудить ваши потребности в
+            IT-решениях.</p>
+        <p>Email: <a href="mailto:makhmud.dev@mail.ru">makhmud.dev@mail.ru</a></p>
+        <p>Телефон: <a href="tel:+998774305759">+998774305759</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Makhmud/Dev. Все права защищены.</p>
+    </footer>
+
+</body>
+
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Предотвращаем горизонтальную прокрутку */
+        }
+
+        /* Анимированный фон */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #4CAF50, #2196F3, #E91E63, #FF9800);
+            background-size: 400% 400%;
+            z-index: -1;
+            animation: animateBackground 10s ease infinite;
+        }
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Шапка (header) */
+        header {
+            background-color: rgba(34, 40, 49, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Навигация (navigation) */
+        nav {
+            background-color: rgba(57, 62, 70, 0.9);
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Секция услуг (services section) */
+        .services {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #222831;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .service {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .service h3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .service p {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        /* Секция обо мне (about-me section) */
+        .about-me {
+            padding: 50px 0;
+            text-align: center;
+            background-color: rgba(244, 244, 244, 0.7);
+        }
+
+        .about-me h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #222831;
+        }
+
+        .about-me p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Секция контактов (contact section) */
+        .contact {
+            padding: 50px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #222831;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .contact a {
+            color: #2196F3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #0b7dda;
+        }
+
+        /* Подвал (footer) */
+        footer {
+            background-color: #222831;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Медиа-запросы для адаптивности */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+            }
+
+            .service-grid {
+                width: 95%;
+            }
+
+            .about-me p {
+                width: 90%;
+            }
+        }
+
+        /* Шрифты (Fonts) */
+    </style>
+
+</html>
